@@ -1,2 +1,2 @@
 # LeetCode
-Repository for recording LeetCode Algorithm problem solving
+Repository for recording LeetCode Algorithm problem solving 😀
