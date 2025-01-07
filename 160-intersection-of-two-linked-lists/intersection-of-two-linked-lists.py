@@ -1,12 +1,9 @@
 class Solution:
     def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
-        if not headA or not headB:
-            return None 
+        l1, l2 = headA, headB
 
-        pA, pB = headA, headB
+        while l1 != l2: 
+            l1 = l1.next if l1 else headB
+            l2 = l2.next if l2 else headA 
+        return l1
 
-        while pA != pB: 
-            pA = headB if pA is None else pA.next 
-            pB = headA if pB is None else pB.next 
-
-        return pA 
